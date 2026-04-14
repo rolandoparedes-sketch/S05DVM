@@ -21,7 +21,7 @@ public class ActivarCamaraSpline : MonoBehaviour
     {
         if (hit.gameObject.CompareTag("Cesped") && !enSpline)
         {
-            Debug.Log("ACTIVA SPLINE");
+            Debug.Log("FIFA17");
 
             camaraNormal.Priority.Value = 0;
             camaraSpline.Priority.Value = 20;
@@ -37,7 +37,7 @@ public class ActivarCamaraSpline : MonoBehaviour
 
     void VolverCamara()
     {
-        Debug.Log("VOLVER A JUGADOR");
+        Debug.Log("A JUGAR");
 
         dolly.enabled = false; 
 
