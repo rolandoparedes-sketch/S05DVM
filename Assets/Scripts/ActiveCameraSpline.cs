@@ -5,8 +5,10 @@ public class ActivarCamaraSpline : MonoBehaviour
 {
     public CinemachineCamera camaraNormal;
     public CinemachineCamera camaraSpline;
-
+    public CinemachineCamera camaraDolly2;
     private CinemachineSplineDolly dolly;
+    public CinemachineCamera camaraA;
+    public CinemachineCamera camaraB;
     private bool enSpline = false;
     private bool yaSeActivo = false;
     public float velocidad = 0.2f; 
@@ -54,8 +56,13 @@ public class ActivarCamaraSpline : MonoBehaviour
         dolly.enabled = false;
 
         camaraSpline.Priority.Value = 0;
-        camaraNormal.Priority.Value = 50;
+        camaraDolly2.Priority.Value = 20;
 
-        enSpline = false;
+        Invoke("VolverAlJugador", 3f); 
+    }
+    void VolverAlJugador()
+    {
+        camaraDolly2.Priority.Value = 0;
+        camaraNormal.Priority.Value = 50; 
     }
 }
