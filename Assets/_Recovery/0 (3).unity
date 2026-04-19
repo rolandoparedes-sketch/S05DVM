@@ -121426,6 +121426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ActivarCamaraSpline
   camaraNormal: {fileID: 1024524170}
   camaraSpline: {fileID: 1358150210}
+  velocidad: 0.2
 --- !u!1001 &799151478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -210018,7 +210019,7 @@ MonoBehaviour:
     Position: {x: 0, y: 0, z: 0}
     Angular: 0
   AutomaticDolly:
-    Enabled: 1
+    Enabled: 0
     Method:
       rid: 1473219469116440659
   m_LegacyPosition: -1
@@ -210030,7 +210031,7 @@ MonoBehaviour:
     - rid: 1473219469116440659
       type: {class: SplineAutoDolly/FixedSpeed, ns: Unity.Cinemachine, asm: Unity.Cinemachine}
       data:
-        Speed: 0.1
+        Speed: 0.2
 --- !u!114 &1358150210
 MonoBehaviour:
   m_ObjectHideFlags: 0
